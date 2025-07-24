@@ -1,16 +1,6 @@
 import React, { useState } from 'react';
 import { Users as UsersIcon, Plus, Shield, User, Mail, Calendar, Settings, Trash2 } from 'lucide-react';
-interface UserData {
-  id: string;
-  name: string;
-  email: string;
-  role: 'admin' | 'operator' | 'viewer';
-  status: 'active' | 'inactive';
-  lastLogin: string;
-  createdAt: string;
-  avatar?: string;
-}
-
+interface UserData {id: string; name: string; email: string; role: 'admin' | 'operator' | 'viewer'; status: 'active' | 'inactive'; lastLogin: string; createdAt: string; avatar?: string;}
 const Users: React.FC = () => {
   const [users, setUsers] = useState<UserData[]>(mockUsers);
   const [selectedRole, setSelectedRole] = useState('all');
@@ -28,7 +18,6 @@ const Users: React.FC = () => {
         return 'bg-gray-500/10 text-gray-400 border-gray-500/30';
     }
   };
-
   const getStatusColor = (status: string) => {
     return status === 'active' ? 'bg-green-500/10 text-green-400 border-green-500/30' : 'bg-red-500/10 text-red-400 border-red-500/30';
     };
