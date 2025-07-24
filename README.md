@@ -37,7 +37,7 @@ A comprehensive CCTV monitoring dashboard built for SecureSight, featuring real-
    - Create a Supabase project
    - Run the migration file `supabase/migrations/create_securesight_schema.sql`
    - Copy `.env.example` to `.env` and add your Supabase credentials
-   - github Repo : 
+   - github Repo : https://github.com/latha0001/SecuritySight--CCTV
    - Netlify Live Demo Link : https://rad-mochi-8030ce.netlify.app/
 3. **Run Development Server**:
    ```bash
